@@ -62,6 +62,13 @@ or a Git URI::
 See ``examples/sklearn_elasticnet_wine`` for a sample project with an MLproject file.
 
 
+To View Runs Logged in the Tracking UI
+--------------------------------------
+To view the logged runs of your model using the MLflow tracking UI, you can add the following command in your script: 
+
+    mlflow.set.tracking_uri('http://localhost:5000')
+    
+    
 Saving and Serving Models
 -------------------------
 To illustrate managing models, the ``mlflow.sklearn`` package can log scikit-learn models as
